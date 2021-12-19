@@ -1,7 +1,9 @@
 require 'ruby2d'
 
+# im testing on new computer
+
 set background: 'navy'
-set fps_cap: 20
+set fps_cap: 15
 
 # width = 640 /20 = 32
 # height =  480 / 20 = 24
@@ -79,6 +81,15 @@ class Snake
   end
 
 end
+
+coin = Sprite.new(
+  'snake.png',
+  clip_width: 84,
+  time: 300,
+  loop: true
+)
+
+coin.play
 
 class Game
   def initialize
